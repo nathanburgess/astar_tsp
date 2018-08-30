@@ -44,7 +44,7 @@ class Node:
         y = int(pos / self.size)
 
         if d == "n":
-            if y - 1 > 0:
+            if y - 1 >= 0:
                 return pos - self.size
         elif d == "s":
             if y + 1 < self.size:
@@ -53,9 +53,9 @@ class Node:
             if x + 1 < self.size:
                 return pos + 1
         elif d == "w":
-            if x - 1 < self.size:
+            if x - 1 >= 0:
                 return pos - 1
-        return None
+        return -1
 
     #
     # Create a list of child nodes containing all possible moves from the
