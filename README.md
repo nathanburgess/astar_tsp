@@ -41,4 +41,4 @@ Which took the path:
 [['e', 'e', 's', 'e', 'e', 's'], ['s', 'w', 's', 'w', 's', 's', 'w', 's'], ['e', 'e', 'n', 'e', 'n', 'n', 'e', 'n', 'n', 'n', 'n', 'w', 'w']]
 ```
 
-![Solution Path](https://nathanaburgess.com/images/astar_solution.png)
+![Solution Path](https://nathanaburgess.com/images/astar_kata_solution.png)
