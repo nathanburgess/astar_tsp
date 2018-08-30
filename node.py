@@ -44,7 +44,7 @@ class Node:
         y = int(pos / self.size)
 
         if d == "n":
-            if y - 1 >= 0:
+            if y - 1 > 0:
                 return pos - self.size
         elif d == "s":
             if y + 1 < self.size:
@@ -72,7 +72,7 @@ class Node:
             move = self.test_dir(direction, pos)
 
             # Can't do anything if the move isn't valid
-            if not move:
+            if not move or move < 0:
                 continue
 
             # We have to make sure we're only considering blank positions to move
